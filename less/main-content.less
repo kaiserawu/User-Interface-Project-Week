@@ -1,0 +1,29 @@
+#content {
+    .content-tile {
+        .flex(@justify: space-around, @align: center);
+        padding: 50px 60px;
+        
+        .content-tile-text {
+            width: 45%;
+
+            h3 {
+                font-size: 2.4rem;
+                font-weight: bold;
+                padding-bottom: 25px;
+            }
+
+            p {
+                line-height: @line-height;
+                padding-bottom: 40px;
+            }
+
+            a {
+                text-decoration: none;
+                color: @font-color;
+
+                border: 1px solid @main-btn-border;
+                padding: 12px 25px;
+            }
+        }
+    }
+}

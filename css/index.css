@@ -140,6 +140,7 @@ html body {
   max-width: 1024px;
   margin: 0 auto;
   font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.6rem;
 }
 html body header {
   background-color: #98A4AF;
@@ -183,4 +184,30 @@ html body #jumbotron h2 {
   font-weight: bold;
   line-height: 7.5rem;
   letter-spacing: 1px;
+}
+html body #content .content-tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 50px 60px;
+}
+html body #content .content-tile .content-tile-text {
+  width: 45%;
+}
+html body #content .content-tile .content-tile-text h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+html body #content .content-tile .content-tile-text p {
+  line-height: 2.4rem;
+  padding-bottom: 40px;
+}
+html body #content .content-tile .content-tile-text a {
+  text-decoration: none;
+  color: #222222;
+  border: 1px solid #222222;
+  padding: 12px 25px;
 }
