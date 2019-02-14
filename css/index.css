@@ -162,6 +162,7 @@ html body header #header-content h1 {
   margin: 10px;
   font-size: 2.4rem;
   color: #FFFFFF;
+  letter-spacing: 1px;
 }
 html body header #header-content button {
   background-color: transparent;
@@ -169,4 +170,17 @@ html body header #header-content button {
 }
 html body header #header-content nav {
   display: none;
+}
+html body #jumbotron {
+  height: 598px;
+  background-image: url("../img/home/home-jumbotron.png");
+}
+html body #jumbotron h2 {
+  padding-top: 325px;
+  padding-left: 80px;
+  color: #FFFFFF;
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 7.5rem;
+  letter-spacing: 1px;
 }
