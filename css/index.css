@@ -133,3 +133,40 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
+html body {
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "Roboto", Arial, sans-serif;
+}
+html body header {
+  background-color: #98A4AF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+html body header #header-content {
+  width: 85%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+html body header #header-content h1 {
+  margin: 10px;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+}
+html body header #header-content button {
+  background-color: transparent;
+  border-color: transparent;
+}
+html body header #header-content nav {
+  display: none;
+}

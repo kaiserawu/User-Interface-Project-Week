@@ -1,2 +1,16 @@
 @import "reset.less";
 @import "variables.less";
+@import "mixins.less";
+
+html {
+    font-size: 62.5%;
+
+    
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+        font-family: @font-set;
+        
+        @import "header.less";
+    }
+}

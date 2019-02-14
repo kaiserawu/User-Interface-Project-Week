@@ -1,0 +1,29 @@
+header {
+    background-color: @nav-bg-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    #header-content {
+        width: 85%;
+        margin: 0 auto;
+        height: 50px;
+        .flex(@justify: space-between);
+
+        h1 {
+            margin: 10px;
+            font-size: 2.4rem;
+            color: @nav-logo-color;
+        }
+
+        button {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    
+        nav {
+            display: none;
+        }
+    }
+}
