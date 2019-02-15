@@ -6,13 +6,19 @@ html {
     font-size: 62.5%;
 
     body {
-        max-width: 1024px;
         margin: 0 auto;
         font-family: @font-set;
         font-size: @font-size;
         
         @import "header.less";
         @import "jumbotron.less";
-        @import "main-content.less";
+
+        #main-body {
+            width: 83%;
+            margin: 0 auto;
+
+            @import "main-content.less";
+            @import "projects.less";
+        }
     }
 }
