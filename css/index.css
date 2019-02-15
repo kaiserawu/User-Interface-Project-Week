@@ -227,3 +227,23 @@ html body #main-body #projects h2 {
   font-weight: bold;
   margin-bottom: 45px;
 }
+html body #main-body #projects .projects-banner {
+  position: relative;
+}
+html body #main-body #projects .projects-banner img {
+  width: 100%;
+}
+html body #main-body #projects .projects-banner h3 {
+  position: absolute;
+  bottom: -13%;
+  background-color: #D8D8D8;
+  font-size: 2.4rem;
+  letter-spacing: 9px;
+  padding: 4% 5%;
+}
+html body #main-body #projects .projects-banner .banner-right {
+  right: 0;
+}
+html body #main-body #projects .projects-banner .banner-left {
+  left: 0;
+}
