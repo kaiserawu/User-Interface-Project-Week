@@ -7,14 +7,14 @@
 
     #services-tab-buttons {
         .flex(@justify: space-between);
-        margin-bottom: 50px;
+        margin-bottom: 55px;
 
         .tab-button {
             width: 22%;
             height: 50px;
             font-size: @services-btn-font-size;
             font-weight: @services-btn-font-weight;
-            font-color: @font-color;
+            color: @font-color;
             background-color: @services-btn-bg;
             border-color: @services-btn-border-color;
 
@@ -27,5 +27,37 @@
         .tab-button-selected {
             background-color: @services-selected-bg;
         }
+    }
+
+    #services-tab-contents {
+        margin-bottom: 110px;
+
+        .tab-content {
+            display: none;
+
+            h2 {
+                font-size: @services-tab-header-size;
+                font-weight: @services-tab-header-weight;
+            }
+    
+            .tab-content-all {
+                .flex(@justify: space-between, flex-start);
+    
+                .tab-content-text {
+                    .flex(column, space-between);
+                    width: 50%;
+    
+                    p {
+                        line-height: @services-tab-line-height;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }        
+        
+        .tab-content-selected {
+            display: block;
+        }
+        
     }
 }
