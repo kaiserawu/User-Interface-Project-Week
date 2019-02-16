@@ -232,21 +232,50 @@ html body #main-body #content .content-tile .content-tile-text h3 {
 }
 html body #main-body #content .content-tile .content-tile-text p {
   line-height: 2.4rem;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 html body #main-body #content .content-tile .content-tile-text a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
   text-decoration: none;
   color: #222222;
   border: 1px solid #222222;
-  padding: 12px 25px;
+  width: 33%;
+  height: 45px;
 }
 @media (max-width: 400px) {
-  html body #main-body #content .content-tile {
+  html body #main-body #content #first-tile {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+  }
+  html body #main-body #content #second-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  html body #main-body #content .content-tile {
+    padding: 40px 0 0 0;
+  }
+  html body #main-body #content .content-tile :first-child {
+    padding-right: 0;
+  }
+  html body #main-body #content .content-tile .desktop-img {
+    display: none;
+  }
+  html body #main-body #content .content-tile .mobile-img {
+    display: block;
+    margin-bottom: 20px;
+  }
+  html body #main-body #content .content-tile .content-tile-text a {
+    width: 100%;
   }
 }
 html body #main-body #projects {
@@ -315,4 +344,9 @@ html body footer #copyright {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 25px;
+}
+@media (max-width: 400px) {
+  html body #main-body {
+    width: 90%;
+  }
 }
