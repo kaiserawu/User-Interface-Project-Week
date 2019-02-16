@@ -19,20 +19,20 @@ html {
         @import "header.less";
         @import "jumbotron.less";
         
+        #page-body {
+            width: 83%;
+            margin: 0 auto;
+        }
+
         // Main Page CSS
         &#main-page {
-            #main-body {
-                width: 83%;
-                margin: 0 auto;
-                
-                @import "main-content.less";
-                @import "projects.less";
-            }
+            @import "main-content.less";
+            @import "projects.less";
         }
 
         //Services Page CSS
         &#services-page {
-            
+            @import "services-content.less";
         }
         
         // General CSS, footer and media queries

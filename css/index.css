@@ -204,11 +204,11 @@ html body #jumbotron #jumbo-text {
     bottom: 8%;
   }
 }
-html body#main-page #main-body {
+html body #page-body {
   width: 83%;
   margin: 0 auto;
 }
-html body#main-page #main-body #content .content-tile {
+html body#main-page #content .content-tile {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -216,19 +216,19 @@ html body#main-page #main-body #content .content-tile {
   align-content: center;
   padding: 50px 0;
 }
-html body#main-page #main-body #content .content-tile :first-child {
+html body#main-page #content .content-tile :first-child {
   padding-right: 30px;
 }
-html body#main-page #main-body #content .content-tile .content-tile-text h3 {
+html body#main-page #content .content-tile .content-tile-text h3 {
   font-size: 2.4rem;
   font-weight: bold;
   padding-bottom: 25px;
 }
-html body#main-page #main-body #content .content-tile .content-tile-text p {
+html body#main-page #content .content-tile .content-tile-text p {
   line-height: 2.4rem;
   padding-bottom: 30px;
 }
-html body#main-page #main-body #content .content-tile .content-tile-text a {
+html body#main-page #content .content-tile .content-tile-text a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -241,60 +241,60 @@ html body#main-page #main-body #content .content-tile .content-tile-text a {
   height: 45px;
 }
 @media (max-width: 400px) {
-  html body#main-page #main-body #content {
+  html body#main-page #content {
     width: 90%;
     margin: 0 auto;
   }
-  html body#main-page #main-body #content #first-tile {
+  html body#main-page #content #first-tile {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
   }
-  html body#main-page #main-body #content #second-tile {
+  html body#main-page #content #second-tile {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
   }
-  html body#main-page #main-body #content .content-tile {
+  html body#main-page #content .content-tile {
     padding: 40px 0 0 0;
   }
-  html body#main-page #main-body #content .content-tile :first-child {
+  html body#main-page #content .content-tile :first-child {
     padding-right: 0;
   }
-  html body#main-page #main-body #content .content-tile .desktop-img {
+  html body#main-page #content .content-tile .desktop-img {
     display: none;
   }
-  html body#main-page #main-body #content .content-tile .mobile-img {
+  html body#main-page #content .content-tile .mobile-img {
     display: block;
     margin-bottom: 20px;
   }
-  html body#main-page #main-body #content .content-tile .content-tile-text a {
+  html body#main-page #content .content-tile .content-tile-text a {
     width: 100%;
   }
 }
-html body#main-page #main-body #projects {
+html body#main-page #projects {
   padding-top: 50px;
 }
-html body#main-page #main-body #projects h2 {
+html body#main-page #projects h2 {
   font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 45px;
 }
-html body#main-page #main-body #projects .projects-section {
+html body#main-page #projects .projects-section {
   margin-bottom: 100px;
 }
-html body#main-page #main-body #projects .projects-section .projects-banner {
+html body#main-page #projects .projects-section .projects-banner {
   position: relative;
   margin-bottom: 80px;
 }
-html body#main-page #main-body #projects .projects-section .projects-banner img {
+html body#main-page #projects .projects-section .projects-banner img {
   width: 100%;
 }
-html body#main-page #main-body #projects .projects-section .projects-banner h3 {
+html body#main-page #projects .projects-section .projects-banner h3 {
   position: absolute;
   bottom: -13%;
   background-color: #D8D8D8;
@@ -302,30 +302,30 @@ html body#main-page #main-body #projects .projects-section .projects-banner h3 {
   letter-spacing: 9px;
   padding: 4% 5%;
 }
-html body#main-page #main-body #projects .projects-section .projects-banner .banner-right {
+html body#main-page #projects .projects-section .projects-banner .banner-right {
   right: 0;
 }
-html body#main-page #main-body #projects .projects-section .projects-banner .banner-left {
+html body#main-page #projects .projects-section .projects-banner .banner-left {
   left: 0;
 }
-html body#main-page #main-body #projects .projects-section p {
+html body#main-page #projects .projects-section p {
   width: 53%;
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: 1.8rem;
 }
 @media (max-width: 400px) {
-  html body#main-page #main-body #projects h2 {
+  html body#main-page #projects h2 {
     width: 90%;
     margin: 0 auto 25px;
   }
-  html body#main-page #main-body #projects .projects-section {
+  html body#main-page #projects .projects-section {
     margin-bottom: 40px;
   }
-  html body#main-page #main-body #projects .projects-section .projects-banner {
+  html body#main-page #projects .projects-section .projects-banner {
     margin-bottom: 110px;
   }
-  html body#main-page #main-body #projects .projects-section .projects-banner h3 {
+  html body#main-page #projects .projects-section .projects-banner h3 {
     width: 90%;
     left: 0;
     right: 0;
@@ -334,9 +334,12 @@ html body#main-page #main-body #projects .projects-section p {
     text-align: center;
     margin: auto;
   }
-  html body#main-page #main-body #projects .projects-section p {
+  html body#main-page #projects .projects-section p {
     width: 90%;
   }
+}
+html body#services-page #services-content {
+  margin-top: 45px;
 }
 html body footer {
   background-color: #828282;
