@@ -26,4 +26,29 @@ footer {
         font-size: 1.2rem;
         margin-top: 25px;
     }
+
+    @media @phone {
+        margin-top: 70px;
+        padding: 20px 0;
+
+        #footer-content {
+            width: 90%;
+            margin: 0 auto;
+            .flex(column, space-around, flex-start);
+
+            input {
+                height: 50px;
+            }
+
+            .address {
+                margin: 12px 0;
+            }
+        }
+
+        #copyright {
+            width: 90%;
+            margin: 25px auto 0;
+            text-align: left;
+        }
+    }
 }
