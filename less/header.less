@@ -1,8 +1,6 @@
 header {
     background-color: @nav-bg-color;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1;
     
@@ -27,5 +25,9 @@ header {
         nav {
             display: none;
         }
+    }
+
+    @media @phone {
+        position: relative;
     }
 }

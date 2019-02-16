@@ -145,8 +145,6 @@ html body {
 html body header {
   background-color: #98A4AF;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 1;
 }
@@ -172,6 +170,11 @@ html body header #header-content button {
 }
 html body header #header-content nav {
   display: none;
+}
+@media (max-width: 400px) {
+  html body header {
+    position: relative;
+  }
 }
 html body #jumbotron {
   position: relative;
