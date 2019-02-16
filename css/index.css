@@ -341,6 +341,9 @@ html body#main-page #projects .projects-section p {
 html body#services-page #services-content {
   margin-top: 45px;
 }
+html body#services-page #services-tab-section {
+  margin-top: 45px;
+}
 html body footer {
   background-color: #828282;
   padding: 50px 0 10px 0;
