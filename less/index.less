@@ -3,6 +3,7 @@
 @import "mixins.less";
 
 html {
+    // General CSS, header
     font-size: 62.5%;
 
     body {
@@ -17,17 +18,26 @@ html {
 
         @import "header.less";
         @import "jumbotron.less";
-
-        #main-body {
-            width: 83%;
-            margin: 0 auto;
-
-            @import "main-content.less";
-            @import "projects.less";
+        
+        // Main Page CSS
+        &#main-page {
+            #main-body {
+                width: 83%;
+                margin: 0 auto;
+                
+                @import "main-content.less";
+                @import "projects.less";
+            }
         }
 
+        //Services Page CSS
+        &#services-page {
+            
+        }
+        
+        // General CSS, footer and media queries
         @import "footer.less";
-
+    
         @media @phone {
             .desktop-img {
                 display: none;
