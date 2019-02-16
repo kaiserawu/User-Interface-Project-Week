@@ -344,6 +344,30 @@ html body#services-page #services-content {
 html body#services-page #services-tab-section {
   margin-top: 45px;
 }
+html body#services-page #services-tab-section #services-tab-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+html body#services-page #services-tab-section #services-tab-buttons .tab-button {
+  width: 22%;
+  height: 50px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-color: #222222;
+  background-color: #FFFFFF;
+  border-color: #222222;
+}
+html body#services-page #services-tab-section #services-tab-buttons .tab-button:hover {
+  background-color: #222222;
+  color: #FFF;
+}
+html body#services-page #services-tab-section #services-tab-buttons .tab-button-selected {
+  background-color: #5E9FB9;
+}
 html body footer {
   background-color: #828282;
   padding: 50px 0 10px 0;
