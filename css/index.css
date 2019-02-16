@@ -197,12 +197,6 @@ html body #jumbotron p {
   letter-spacing: 1px;
 }
 @media (max-width: 400px) {
-  html body #jumbotron .desktop-img {
-    display: none;
-  }
-  html body #jumbotron .mobile-img {
-    display: block;
-  }
   html body #jumbotron p {
     font-size: 3.5rem;
     line-height: 4rem;
@@ -346,6 +340,12 @@ html body footer #copyright {
   margin-top: 25px;
 }
 @media (max-width: 400px) {
+  html body .desktop-img {
+    display: none;
+  }
+  html body .mobile-img {
+    display: block;
+  }
   html body #main-body {
     width: 90%;
   }
