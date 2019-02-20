@@ -173,6 +173,9 @@ html body header #topbar #header-content button {
   background-color: transparent;
   border-color: transparent;
 }
+html body header #topbar #header-content button .icon-hidden {
+  display: none;
+}
 html body header .nav-dropdown {
   display: none;
 }
