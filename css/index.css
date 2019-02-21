@@ -142,102 +142,6 @@ html body {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
-html body .mobile-img {
-  display: none;
-}
-html body header {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-html body header #topbar {
-  background-color: #98a4af;
-}
-html body header #topbar #header-content {
-  width: 85%;
-  margin: 0 auto;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-html body header #topbar #header-content #logo {
-  margin: 10px;
-  font-size: 2.4rem;
-  color: #FFFFFF;
-  letter-spacing: 1px;
-}
-html body header #topbar #header-content button {
-  background-color: transparent;
-  border-color: transparent;
-  cursor: pointer;
-}
-html body header #topbar #header-content button .icon-hidden {
-  display: none;
-}
-html body header .nav-dropdown {
-  display: none;
-}
-html body header .displayed {
-  background-color: rgba(152, 164, 175, 0.9);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-}
-html body header .displayed nav {
-  margin-top: -200px;
-  height: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-html body header .displayed nav a {
-  font-size: 4.8rem;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-html body header .displayed nav a:hover {
-  color: #222222;
-}
-@media (max-width: 400px) {
-  html body header #header-content {
-    width: 95%;
-  }
-}
-html body #jumbotron {
-  position: relative;
-  width: 100%;
-}
-html body #jumbotron img {
-  width: 100%;
-}
-html body #jumbotron #jumbo-text {
-  position: absolute;
-  left: 8%;
-  bottom: 8%;
-  color: #FFFFFF;
-  font-size: 6.4rem;
-  font-weight: bold;
-  line-height: 7.5rem;
-  letter-spacing: 1px;
-}
-@media (max-width: 400px) {
-  html body #jumbotron p {
-    font-size: 3.5rem;
-    line-height: 4rem;
-    left: 5%;
-    bottom: 8%;
-  }
-}
 html body #page-body {
   width: 83%;
   margin: 0 auto;
@@ -435,6 +339,102 @@ html body#services-page #services-tab-section #services-tab-contents .tab-conten
 html body#services-page #services-tab-section #services-tab-contents .tab-content-selected {
   display: block;
 }
+html body .mobile-img {
+  display: none;
+}
+html body header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+html body header #topbar {
+  background-color: #98a4af;
+}
+html body header #topbar #header-content {
+  width: 85%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+html body header #topbar #header-content #logo {
+  margin: 10px;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+html body header #topbar #header-content button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+html body header #topbar #header-content button .icon-hidden {
+  display: none;
+}
+html body header .nav-dropdown {
+  display: none;
+}
+html body header .displayed {
+  background-color: rgba(152, 164, 175, 0.9);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+html body header .displayed nav {
+  margin-top: -200px;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+html body header .displayed nav a {
+  font-size: 4.8rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+html body header .displayed nav a:hover {
+  color: #222222;
+}
+@media (max-width: 400px) {
+  html body header #header-content {
+    width: 95%;
+  }
+}
+html body #jumbotron {
+  position: relative;
+  width: 100%;
+}
+html body #jumbotron img {
+  width: 100%;
+}
+html body #jumbotron #jumbo-text {
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
+  color: #FFFFFF;
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 7.5rem;
+  letter-spacing: 1px;
+}
+@media (max-width: 400px) {
+  html body #jumbotron #jumbo-text {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    left: 5%;
+    bottom: 8%;
+  }
+}
 html body footer {
   background-color: #828282;
   padding: 50px 0 10px 0;
@@ -497,7 +497,7 @@ html body footer #copyright {
   html body .mobile-img {
     display: block;
   }
-  html body #main-body {
+  html body #page-body {
     width: 100%;
   }
 }

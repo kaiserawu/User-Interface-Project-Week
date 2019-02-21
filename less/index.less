@@ -12,30 +12,29 @@ html {
         font-size: @font-size;
         line-height: @line-height;
         
+        #page-body {
+            width: 83%;
+            margin: 0 auto;
+        }
+        
+        // Main Page CSS
+        &#main-page {
+            @import "main-content.less";
+            @import "projects.less";
+        }
+        
+        //Services Page CSS
+        &#services-page {
+            @import "services.less";
+        }
+        
+        // General CSS, header, jumbotron, footer and media queries
         .mobile-img {
             display: none;
         }
 
         @import "header.less";
         @import "jumbotron.less";
-        
-        #page-body {
-            width: 83%;
-            margin: 0 auto;
-        }
-
-        // Main Page CSS
-        &#main-page {
-            @import "main-content.less";
-            @import "projects.less";
-        }
-
-        //Services Page CSS
-        &#services-page {
-            @import "services.less";
-        }
-        
-        // General CSS, footer and media queries
         @import "footer.less";
     
         @media @phone {
@@ -47,7 +46,7 @@ html {
                 display: block;
             }
 
-            #main-body {
+            #page-body {
                 width: 100%;
             }
         }
