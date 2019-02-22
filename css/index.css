@@ -1,1 +1,503 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  margin: 0 auto;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+html body #page-body {
+  width: 83%;
+  margin: 0 auto;
+}
+html body#main-page #content .content-tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 50px 0;
+}
+html body#main-page #content .content-tile :first-child {
+  padding-right: 30px;
+}
+html body#main-page #content .content-tile .content-tile-text h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+html body#main-page #content .content-tile .content-tile-text p {
+  line-height: 2.4rem;
+  padding-bottom: 30px;
+}
+html body#main-page #content .content-tile .content-tile-text a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+  color: #222222;
+  border: 1px solid #222222;
+  width: 33%;
+  height: 45px;
+}
+@media (max-width: 400px) {
+  html body#main-page #content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  html body#main-page #content #first-tile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  html body#main-page #content #second-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  html body#main-page #content .content-tile {
+    padding: 40px 0 0 0;
+  }
+  html body#main-page #content .content-tile :first-child {
+    padding-right: 0;
+  }
+  html body#main-page #content .content-tile .desktop-img {
+    display: none;
+  }
+  html body#main-page #content .content-tile .mobile-img {
+    display: block;
+    margin-bottom: 20px;
+  }
+  html body#main-page #content .content-tile .content-tile-text a {
+    width: 100%;
+  }
+}
+html body#main-page #projects {
+  padding-top: 50px;
+}
+html body#main-page #projects h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+html body#main-page #projects .projects-section {
+  margin-bottom: 100px;
+}
+html body#main-page #projects .projects-section .projects-banner {
+  position: relative;
+  margin-bottom: 80px;
+}
+html body#main-page #projects .projects-section .projects-banner img {
+  width: 100%;
+}
+html body#main-page #projects .projects-section .projects-banner h3 {
+  position: absolute;
+  bottom: -13%;
+  background-color: #D8D8D8;
+  font-size: 2.4rem;
+  letter-spacing: 9px;
+  padding: 4% 5%;
+}
+html body#main-page #projects .projects-section .projects-banner .banner-right {
+  right: 0;
+}
+html body#main-page #projects .projects-section .projects-banner .banner-left {
+  left: 0;
+}
+html body#main-page #projects .projects-section p {
+  width: 53%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+@media (max-width: 400px) {
+  html body#main-page #projects h2 {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+  html body#main-page #projects .projects-section {
+    margin-bottom: 40px;
+  }
+  html body#main-page #projects .projects-section .projects-banner {
+    margin-bottom: 110px;
+  }
+  html body#main-page #projects .projects-section .projects-banner h3 {
+    width: 90%;
+    left: 0;
+    right: 0;
+    bottom: -45%;
+    padding: 12% 0;
+    text-align: center;
+    margin: auto;
+  }
+  html body#main-page #projects .projects-section p {
+    width: 90%;
+  }
+}
+html body#services-page #services-content {
+  margin-top: 45px;
+}
+html body#services-page #services-tab-section {
+  margin-top: 45px;
+}
+html body#services-page #services-tab-section #services-tab-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 55px;
+}
+html body#services-page #services-tab-section #services-tab-buttons .tab-button {
+  width: 22%;
+  height: 50px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222222;
+  background-color: #FFFFFF;
+  border-color: #222222;
+  cursor: pointer;
+}
+html body#services-page #services-tab-section #services-tab-buttons .tab-button:hover {
+  background-color: #222222;
+  color: #FFF;
+}
+html body#services-page #services-tab-section #services-tab-buttons .tab-button-selected {
+  background-color: #5E9FB9;
+}
+html body#services-page #services-tab-section #services-tab-contents {
+  margin-bottom: 80px;
+}
+html body#services-page #services-tab-section #services-tab-contents .tab-content {
+  display: none;
+}
+html body#services-page #services-tab-section #services-tab-contents .tab-content h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+html body#services-page #services-tab-section #services-tab-contents .tab-content .tab-content-all {
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+html body#services-page #services-tab-section #services-tab-contents .tab-content .tab-content-all .tab-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+}
+html body#services-page #services-tab-section #services-tab-contents .tab-content .tab-content-all .tab-content-text p {
+  line-height: 2.7rem;
+  margin: 10px 0;
+}
+html body#services-page #services-tab-section #services-tab-contents .tab-content-selected {
+  display: block;
+}
+html body .mobile-img {
+  display: none;
+}
+html body header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+html body header #topbar {
+  background-color: #98a4af;
+}
+html body header #topbar #header-content {
+  width: 85%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+html body header #topbar #header-content #logo {
+  margin: 10px;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+html body header #topbar #header-content button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+html body header #topbar #header-content button .icon-hidden {
+  display: none;
+}
+html body header .nav-dropdown {
+  display: none;
+}
+html body header .displayed {
+  background-color: rgba(152, 164, 175, 0.9);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+html body header .displayed nav {
+  margin-top: -200px;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+html body header .displayed nav a {
+  font-size: 4.8rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+html body header .displayed nav a:hover {
+  color: #222222;
+}
+@media (max-width: 400px) {
+  html body header #header-content {
+    width: 95%;
+  }
+}
+html body #jumbotron {
+  position: relative;
+  width: 100%;
+}
+html body #jumbotron img {
+  width: 100%;
+}
+html body #jumbotron #jumbo-text {
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
+  color: #FFFFFF;
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 7.5rem;
+  letter-spacing: 1px;
+}
+@media (max-width: 400px) {
+  html body #jumbotron #jumbo-text {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    left: 5%;
+    bottom: 8%;
+  }
+}
+html body footer {
+  background-color: #828282;
+  padding: 50px 0 10px 0;
+  color: #FFFFFF;
+}
+html body footer #footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+html body footer #footer-content h4 {
+  font-size: 2rem;
+}
+html body footer #footer-content input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  margin: 10px 0 5px 0;
+}
+html body footer #copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 25px;
+}
+@media (max-width: 400px) {
+  html body footer {
+    margin-top: 70px;
+    padding: 20px 0;
+  }
+  html body footer #footer-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  html body footer #footer-content input {
+    height: 50px;
+  }
+  html body footer #footer-content .address {
+    margin: 12px 0;
+  }
+  html body footer #copyright {
+    width: 90%;
+    margin: 25px auto 0;
+    text-align: left;
+  }
+}
+@media (max-width: 400px) {
+  html body .desktop-img {
+    display: none;
+  }
+  html body .mobile-img {
+    display: block;
+  }
+  html body #page-body {
+    width: 100%;
+  }
+}

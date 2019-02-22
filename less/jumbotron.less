@@ -1,0 +1,28 @@
+#jumbotron {
+    position: relative;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+    
+    #jumbo-text {
+        position: absolute;
+        left: 8%;
+        bottom: 8%;
+        color: @main-jumbo-font-color;
+        font-size: @main-jumbo-font-size;
+        font-weight: @main-jumbo-font-weight;
+        line-height: @main-jumbo-line-height;
+        letter-spacing: 1px;
+    }
+
+    @media @phone {
+        #jumbo-text {
+            font-size: 3.5rem;
+            line-height: 4rem;
+            left: 5%;
+            bottom: 8%;
+        }
+    }
+}
